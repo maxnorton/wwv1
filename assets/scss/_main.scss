@@ -11,6 +11,7 @@ body {}
 
 .homepage-hero {
 	background: url('../images/river.jpg') no-repeat center center;
+	background-origin: padding-box;
 	background-size: cover;
 	height: 68vh;
 }
@@ -21,6 +22,10 @@ body {}
 	height: 0;
 	top: 10px;
 	overflow: visible;
+
+	.name {
+		height: 0;
+	}
 
 	.name h1,
 	& > .tab-bar-section {
@@ -45,20 +50,25 @@ body {}
 
 }
 
-.post-6 h1.page-title {
-	color: rgb(10, 111, 123);
+.hero h1.page-title {
+	color: white;
 	font-family: Garamond, serif;
-	font-variant: small-caps;
-	text-shadow: 1px 1px 2px #888;
+	margin-top: -0.5em;
+	position: relative;
+	top: 34vh;
 }
 
-.post-6 h2 {
+.homepage-hero {
+	text-align: center;
+}
+
+x-.post-6 h2 {
 	font-family: "Futura", sans-serif;
 	font-stretch: condensed;
 	text-align: center;
 }
 
-.post-6 {
+x-.post-6 {
 	border-bottom: 7vw solid #fff;
 	display: block;
  	
@@ -177,7 +187,7 @@ POSTS & CONTENT STYLES
 *********************/
 #content {
 	#inner-content {
-		padding: 1rem 0rem;
+		padding: 0;
 	}
 }
 
