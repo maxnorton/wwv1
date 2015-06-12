@@ -9,6 +9,68 @@ GENERAL STYLES
 *********************/
 body {}
 
+.homepage-hero {
+	background: url('../images/river.jpg') no-repeat center center;
+	background-size: cover;
+	height: 68vh;
+}
+
+.tab-bar,
+.top-bar {
+	background: transparent;
+	height: 0;
+	top: 10px;
+	overflow: visible;
+
+	.name h1 a,
+	h1.title {
+		background: url('../images/wwv-logo-text.png') no-repeat transparent;
+		background-size: contain;
+		display: block;
+		height: 0;
+		overflow: hidden;
+		padding: 90px 0 0 0;
+		width: 135px;
+	}
+
+}
+
+.post-6 h1.page-title {
+	color: rgb(10, 111, 123);
+	font-family: Garamond, serif;
+	font-variant: small-caps;
+	text-shadow: 1px 1px 2px #888;
+}
+
+.post-6 h2 {
+	font-family: "Futura", sans-serif;
+	font-stretch: condensed;
+	text-align: center;
+}
+
+.post-6 {
+	border-bottom: 7vw solid #fff;
+	display: block;
+ 	
+ 	&:after {
+		border-left: 7vw solid transparent;
+		border-right: 7vw solid transparent;
+		border-top: 7vw solid #fff;
+		content: " ";
+		left: -7vw;
+		margin-left: 50%;
+		position: relative;
+		top: 7vh;
+	}
+}
+
+.home #main:after {
+	background-color: #000;
+	content: " ";
+	height: 40px;
+}
+
+
 /*********************
 LINK STYLES
 *********************/
