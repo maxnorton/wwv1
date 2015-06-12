@@ -38,7 +38,11 @@
 							
 						 <!-- This navs will be applied to the topbar, above all content 
 							  To see additional nav styles, visit the /parts directory -->
-						 <?php get_template_part( 'parts/nav', 'top-offcanvas' ); ?>
+						 <?php get_template_part( 'parts/nav', 'top-offcanvas' );
+
+						 if (is_front_page) {
+						 	get_template_part( 'parts/hero', 'front' );
+						 } ?>
 								 	
 						</div> <!-- end #inner-header -->
 					</header> <!-- end .header -->

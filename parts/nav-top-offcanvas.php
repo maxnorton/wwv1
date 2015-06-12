@@ -14,10 +14,10 @@
 
 <div class="show-for-small-only">
 	<nav class="tab-bar">
-		<section class="middle tab-bar-section">
+		<section class="left tab-bar-section">
 			<h1 class="title"><?php bloginfo('name'); ?></h1>
 		</section>
-		<section class="left-small">
+		<section class="right-small">
 			<a href="#" class="left-off-canvas-toggle menu-icon" ><span></span></a>
 		</section>
 	</nav>
