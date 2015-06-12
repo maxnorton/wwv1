@@ -22,6 +22,16 @@ body {}
 	top: 10px;
 	overflow: visible;
 
+	.name h1,
+	& > .tab-bar-section {
+		background-color: black;
+		background-color: rgba(0,0,0,0.3);
+		height: 110px;
+		padding: 10px;
+		position: relative;
+		width: 155px;
+	}
+
 	.name h1 a,
 	h1.title {
 		background: url('../images/wwv-logo-text.png') no-repeat transparent;

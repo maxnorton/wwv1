@@ -6887,6 +6887,15 @@ GENERAL STYLES
   height: 0;
   top: 10px;
   overflow: visible; }
+  .tab-bar .name h1, .tab-bar > .tab-bar-section,
+  .top-bar .name h1,
+  .top-bar > .tab-bar-section {
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 110px;
+    padding: 10px;
+    position: relative;
+    width: 155px; }
   .tab-bar .name h1 a,
   .tab-bar h1.title,
   .top-bar .name h1 a,
