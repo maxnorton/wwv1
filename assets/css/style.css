@@ -6914,13 +6914,15 @@ GENERAL STYLES
 
 .hero h1.page-title {
   color: white;
-  font-family: Garamond, serif;
-  margin-top: -0.5em;
-  position: relative;
-  top: 34vh; }
+  font-family: Garamond, serif; }
 
 .homepage-hero {
   text-align: center; }
+
+.homepage-hero article {
+  margin-top: -10vh;
+  position: relative;
+  top: 34vh; }
 
 x-.post-6 h2 {
   font-family: "Futura", sans-serif;
