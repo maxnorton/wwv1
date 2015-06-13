@@ -1,4 +1,4 @@
-<div class="sticky show-for-medium-up contain-to-grid">
+<div class="show-for-medium-up contain-to-grid">
 	<nav class="top-bar" data-topbar>
 		<ul class="title-area">
 			<!-- Title Area -->
@@ -18,14 +18,14 @@
 			<h1 class="title"><?php bloginfo('name'); ?></h1>
 		</section>
 		<section class="right-small">
-			<a href="#" class="left-off-canvas-toggle menu-icon" ><span></span></a>
+			<a href="#" class="right-off-canvas-toggle menu-icon" ><span></span></a>
 		</section>
 	</nav>
 </div>
 						
-<aside class="left-off-canvas-menu show-for-small-only">
+<aside class="right-off-canvas-menu show-for-small-only">
 	<ul class="off-canvas-list">
-		<li><label>Navigation</label></li>
+		<li><label><a href="/explore-california-rivers">Explore California's Whitewater Rivers</a></label></li>
 			<?php joints_off_canvas(); ?>    
 	</ul>
 </aside>

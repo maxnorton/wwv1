@@ -65,28 +65,6 @@ body {}
 	top: 34vh;
 }
 
-x-.post-6 h2 {
-	font-family: "Futura", sans-serif;
-	font-stretch: condensed;
-	text-align: center;
-}
-
-x-.post-6 {
-	border-bottom: 7vw solid #fff;
-	display: block;
- 	
- 	&:after {
-		border-left: 7vw solid transparent;
-		border-right: 7vw solid transparent;
-		border-top: 7vw solid #fff;
-		content: " ";
-		left: -7vw;
-		margin-left: 50%;
-		position: relative;
-		top: 7vh;
-	}
-}
-
 .home #main:after {
 	background-color: #000;
 	content: " ";

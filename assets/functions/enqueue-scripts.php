@@ -16,6 +16,9 @@ function joints_scripts_and_styles() {
     // Adding Foundation scripts file in the footer
    wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/assets/js/min/foundation.js', array( 'jquery' ), '', true );
     
+    // Adding Foundation equalizer scripts file in the footer
+   // wp_enqueue_script( 'foundation-equalizer-js', get_template_directory_uri() . '/assets/js/min/foundation/foundation.equalizer.js', array( 'jquery' ), '', true );
+    
     // Adding scripts file in the footer
     wp_enqueue_script( 'site-js', get_template_directory_uri() . '/assets/js/min/scripts.js', array( 'jquery' ), '', true );
    

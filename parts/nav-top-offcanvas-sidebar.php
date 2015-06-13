@@ -33,9 +33,9 @@
 		</nav>
 </div>
 						
-<aside class="left-off-canvas-menu show-for-small-only">
+<aside class="right-off-canvas-menu show-for-small-only">
 	<ul class="off-canvas-list">
-		<li><label>Navigation</label></li>
+		<li><label><a href="/explore-california-rivers">Explore California's Whitewater Rivers</a></label></li>
 			<?php joints_off_canvas(); ?>       
 	</ul>
 </aside>
