@@ -78,6 +78,22 @@ body {}
 	height: 40px;
 }
 
+.post-76 .pricing-table .description {
+	height: 24.6em;
+	text-align: left;
+}
+
+@media #{$large-up} {
+	.post-76 .pricing-table .description {
+		height: 14.6em;
+	}
+}
+
+@media #{$small-only} {
+.post-76 .pricing-table .title {
+		height: 4em;
+	}
+}
 
 /*********************
 LINK STYLES

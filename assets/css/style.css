@@ -6935,6 +6935,16 @@ GENERAL STYLES
   content: " ";
   height: 40px; }
 
+.post-76 .pricing-table .description {
+  height: 24.6em;
+  text-align: left; }
+
+@media only screen and (min-width: 64.0625em) {
+  .post-76 .pricing-table .description {
+    height: 14.6em; } }
+@media only screen and (max-width: 40em) {
+  .post-76 .pricing-table .title {
+    height: 4em; } }
 /*********************
 LINK STYLES
 *********************/
