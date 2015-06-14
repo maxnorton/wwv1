@@ -16,18 +16,10 @@ body {}
 	height: 68vh;
 }
 
-.internal-hero {
-	background: url("../images/upperkernpano.jpg") no-repeat center center;
-	background-origin: padding-box;
-	background-size: 70em auto;
-	height: 22vh;
-}
-
 .tab-bar,
 .top-bar {
 	background: transparent;
 	height: 0;
-	top: 10px;
 	overflow: visible;
 
 	.name {
@@ -39,6 +31,7 @@ body {}
 		background-color: black;
 		background-color: rgba(0,0,0,0.3);
 		height: 110px;
+		margin-top: 15px;
 		padding: 10px;
 		position: relative;
 		width: 155px;
@@ -53,6 +46,49 @@ body {}
 		overflow: hidden;
 		padding: 90px 0 0 0;
 		width: 135px;
+	}
+
+}
+
+body.home .top-bar .top-bar-menu {
+	display: none;
+}
+
+body:not(.home) .top-bar,
+body:not(.home) .tab-bar {
+	background: url("../images/upperkernpano.jpg") no-repeat center center;
+	background-origin: padding-box;
+	background-size: 70em auto;
+	height: 22vh;
+
+	.top-bar-menu {
+		position: relative;
+		top: 115px;
+	}
+
+	.top-bar-menu > li,
+	.top-bar-menu > li > a {
+		background-color: transparent;
+		line-height: 1.5rem;
+		padding-bottom: 0.5rem;
+		padding-top: 0.5rem;
+	}
+
+	.top-bar-menu > li.current-menu-item > a,
+	.top-bar-menu > li.current-menu-ancestor > a {
+		background-color: transparent;
+		font-size: 1.5rem;
+		line-height: 1rem;
+		padding-bottom: 0.5rem;
+		padding-top: 0.5rem;
+	}
+
+	.top-bar-menu > li.divider {
+		border: 0 none;
+	}
+
+	.top-bar-section .has-dropdown > a:after {
+		display: none;
 	}
 
 }

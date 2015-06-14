@@ -6882,17 +6882,10 @@ GENERAL STYLES
   background-size: cover;
   height: 68vh; }
 
-.internal-hero {
-  background: url("../images/upperkernpano.jpg") no-repeat center center;
-  background-origin: padding-box;
-  background-size: 70em auto;
-  height: 22vh; }
-
 .tab-bar,
 .top-bar {
   background: transparent;
   height: 0;
-  top: 10px;
   overflow: visible; }
   .tab-bar .name,
   .top-bar .name {
@@ -6903,6 +6896,7 @@ GENERAL STYLES
     background-color: black;
     background-color: rgba(0, 0, 0, 0.3);
     height: 110px;
+    margin-top: 15px;
     padding: 10px;
     position: relative;
     width: 155px; }
@@ -6917,6 +6911,43 @@ GENERAL STYLES
     overflow: hidden;
     padding: 90px 0 0 0;
     width: 135px; }
+
+body.home .top-bar .top-bar-menu {
+  display: none; }
+
+body:not(.home) .top-bar,
+body:not(.home) .tab-bar {
+  background: url("../images/upperkernpano.jpg") no-repeat center center;
+  background-origin: padding-box;
+  background-size: 70em auto;
+  height: 22vh; }
+  body:not(.home) .top-bar .top-bar-menu,
+  body:not(.home) .tab-bar .top-bar-menu {
+    position: relative;
+    top: 115px; }
+  body:not(.home) .top-bar .top-bar-menu > li,
+  body:not(.home) .top-bar .top-bar-menu > li > a,
+  body:not(.home) .tab-bar .top-bar-menu > li,
+  body:not(.home) .tab-bar .top-bar-menu > li > a {
+    background-color: transparent;
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem; }
+  body:not(.home) .top-bar .top-bar-menu > li.current-menu-item > a,
+  body:not(.home) .top-bar .top-bar-menu > li.current-menu-ancestor > a,
+  body:not(.home) .tab-bar .top-bar-menu > li.current-menu-item > a,
+  body:not(.home) .tab-bar .top-bar-menu > li.current-menu-ancestor > a {
+    background-color: transparent;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem; }
+  body:not(.home) .top-bar .top-bar-menu > li.divider,
+  body:not(.home) .tab-bar .top-bar-menu > li.divider {
+    border: 0 none; }
+  body:not(.home) .top-bar .top-bar-section .has-dropdown > a:after,
+  body:not(.home) .tab-bar .top-bar-section .has-dropdown > a:after {
+    display: none; }
 
 .hero h1.page-title {
   color: white;
