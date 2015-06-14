@@ -40,7 +40,8 @@
 							  To see additional nav styles, visit the /parts directory -->
 						 <?php get_template_part( 'parts/nav', 'top-offcanvas' ); 
 
-						 if ( is_front_page() ) { get_template_part( 'parts/hero', 'front' ); } ?>
+						 if ( is_front_page() ) { get_template_part( 'parts/hero', 'front' ); }
+						 else { get_template_part( 'parts/hero', 'internal' ); } ?>
 								 	
 						</div> <!-- end #inner-header -->
 					</header> <!-- end .header -->
