@@ -6923,7 +6923,7 @@ body:not(.home) .header {
 
 body:not(.home) .top-bar,
 body:not(.home) .tab-bar {
-  height: 22vh; }
+  height: 175px; }
   body:not(.home) .top-bar .top-bar-menu,
   body:not(.home) .tab-bar .top-bar-menu {
     position: relative;
