@@ -6916,7 +6916,7 @@ body.home .top-bar .top-bar-menu {
   display: none; }
 
 body:not(.home) .header {
-  background: url("../images/lowerkernpano.jpg") no-repeat center -215px;
+  background: url("../images/lowerkernpano.jpg") no-repeat center center;
   background-size: cover; }
   body:not(.home) .header .contain-to-grid {
     background: transparent; }
