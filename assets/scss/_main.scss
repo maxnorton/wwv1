@@ -54,11 +54,17 @@ body.home .top-bar .top-bar-menu {
 	display: none;
 }
 
+body:not(.home) .header {
+	background: url("../images/lowerkernpano.jpg") no-repeat center -215px;
+	background-size: cover;
+
+	.contain-to-grid {
+		background: transparent;
+	}
+}
+
 body:not(.home) .top-bar,
 body:not(.home) .tab-bar {
-	background: url("../images/lowerkernpano.jpg") no-repeat center center;
-	background-origin: padding-box;
-	background-size: 70em auto;
 	height: 22vh;
 
 	.top-bar-menu {
