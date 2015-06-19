@@ -16,4 +16,19 @@ jQuery(document).ready(function() {
 		});
 	});
 
+	var lastScroll = jQuery(window).scrollTop();
+	jQuery(window).scroll(function() {
+		var scrollTop = jQuery(window).scrollTop();
+		var contentTop = Math.round( jQuery('#content').offset().top - 30 );
+		if ( scrollTop > lastScroll &&  scrollTop < contentTop - 100) {
+			jQuery('html, body').animate({
+		        scrollTop: contentTop
+			    }, 250, function () {
+						jQuery('html, body').stop();
+			    }
+		    );
+		}
+		lastScroll = scrollTop;
+	});
+
 });
