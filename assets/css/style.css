@@ -6919,6 +6919,12 @@ GENERAL STYLES
 body.home .top-bar .top-bar-menu {
   display: none; }
 
+.home #main {
+  margin: 1em 0; }
+  .home #main h1 {
+    font-family: 'Futura Round Cond Bold W00 Rg', 'Futura', sans-serif;
+    text-align: center; }
+
 body:not(.home) .header {
   background: url("../images/lowerkernpano.jpg") no-repeat center center;
   background-size: cover; }
