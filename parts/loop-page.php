@@ -7,7 +7,7 @@
 		</header> <!-- end article header -->
 
 		<div class="row collapse">
-			<?php if ( is_front_page() ) { get_template_part('parts/nav', 'main-gridbar' ); } ?>
+			<?php if ( is_front_page() && 0 === 1 ) { get_template_part('parts/nav', 'main-gridbar' ); } ?>
 		</div>
 						
 	    <section class="entry-content" itemprop="articleBody">
