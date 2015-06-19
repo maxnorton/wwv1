@@ -6983,6 +6983,18 @@ body:not(.home) .tab-bar {
 @media only screen and (max-width: 40em) {
   .post-76 .pricing-table .title {
     height: 4em; } }
+.footer h3 {
+  padding-top: 1em; }
+
+.lastrow {
+  background-color: #333;
+  color: white;
+  margin-top: 1em;
+  padding: 2em 0; }
+
+.copyright {
+  text-transform: uppercase; }
+
 /*********************
 LINK STYLES
 *********************/
