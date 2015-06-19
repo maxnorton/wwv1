@@ -23,7 +23,7 @@ function joints_scripts_and_styles() {
     wp_enqueue_script( 'site-js', get_template_directory_uri() . '/assets/js/min/scripts.js', array( 'jquery' ), '', true );
 
     // Add fonts.com project
-    wp_enqueue_script( 'fonts' '//fast.fonts.net/jsapi/cffdeaf7-f133-47f1-a76f-ee408eb534fe.js' )
+    wp_enqueue_script( 'fonts', '//fast.fonts.net/jsapi/cffdeaf7-f133-47f1-a76f-ee408eb534fe.js' );
    
     // Register main stylesheet
     wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array(), '', 'all' );

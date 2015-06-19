@@ -6922,7 +6922,7 @@ body.home .top-bar .top-bar-menu {
 .home #main {
   margin: 1em 0; }
   .home #main h1 {
-    font-family: 'Futura Round Cond Bold W00 Rg', 'Futura', sans-serif;
+    font-family: 'Futura Round W01 Demi', 'Futura', sans-serif;
     text-align: center; }
 
 body:not(.home) .header {
@@ -6979,6 +6979,18 @@ body:not(.home) .tab-bar {
   content: " ";
   height: 40px; }
 
+.panel {
+  background-color: #333;
+  margin-bottom: 0; }
+  .panel h3 {
+    font-family: 'Futura Round W01 Demi', 'Futura', sans-serif; }
+  .panel.callout {
+    background-color: #06697c;
+    margin-bottom: 0; }
+  .panel p,
+  .panel h4, .panel.callout p, .panel.callout h4 {
+    color: #eee; }
+
 .post-76 .pricing-table .description {
   height: 24.6em;
   text-align: left; }
@@ -6990,6 +7002,7 @@ body:not(.home) .tab-bar {
   .post-76 .pricing-table .title {
     height: 4em; } }
 .footer h3 {
+  font-family: 'Futura Round W01 Demi', 'Futura', sans-serif;
   padding-top: 1em; }
 
 .lastrow {
