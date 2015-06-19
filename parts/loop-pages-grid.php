@@ -18,7 +18,7 @@
 	$posts = get_pages( $args );
 ?>
 
-<div class="row" data-equalizer data-equalizer-mq="medium-up"> <!--Begin Row:--> 
+<div id="grid-top" class="row" data-equalizer data-equalizer-mq="medium-up"> <!--Begin Row:--> 
 
      <?php 
 

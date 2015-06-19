@@ -50,6 +50,11 @@ body {}
 
 }
 
+.contain-to-grid .tab-bar {
+	max-width: 62.5em;
+	margin: 0 auto;
+}
+
 body.home .top-bar .top-bar-menu {
 	display: none;
 }
