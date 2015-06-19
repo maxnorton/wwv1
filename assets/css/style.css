@@ -6882,17 +6882,17 @@ GENERAL STYLES
   background-size: cover;
   height: 68vh; }
 
-.tab-bar,
-.top-bar {
+.header .tab-bar,
+.header .top-bar {
   background: transparent;
   height: 0;
   overflow: visible; }
-  .tab-bar .name,
-  .top-bar .name {
+  .header .tab-bar .name,
+  .header .top-bar .name {
     height: 0; }
-  .tab-bar .name h1, .tab-bar > .tab-bar-section,
-  .top-bar .name h1,
-  .top-bar > .tab-bar-section {
+  .header .tab-bar .name h1, .header .tab-bar > .tab-bar-section,
+  .header .top-bar .name h1,
+  .header .top-bar > .tab-bar-section {
     background-color: black;
     background-color: rgba(0, 0, 0, 0.3);
     height: 110px;
@@ -6900,10 +6900,10 @@ GENERAL STYLES
     padding: 10px;
     position: relative;
     width: 155px; }
-  .tab-bar .name h1 a,
-  .tab-bar h1.title,
-  .top-bar .name h1 a,
-  .top-bar h1.title {
+  .header .tab-bar .name h1 a,
+  .header .tab-bar h1.title,
+  .header .top-bar .name h1 a,
+  .header .top-bar h1.title {
     background: url("../images/wwv-logo-text.png") no-repeat transparent;
     background-size: contain;
     display: block;
@@ -6916,14 +6916,33 @@ GENERAL STYLES
   max-width: 62.5em;
   margin: 0 auto; }
 
-body.home .top-bar .top-bar-menu {
+body.home .header .top-bar .top-bar-menu {
   display: none; }
 
 .home #main {
   margin: 1em 0; }
   .home #main h1 {
     font-family: 'Futura Round W01 Demi', 'Futura', sans-serif;
+    margin: 1em 0 0;
     text-align: center; }
+  .home #main .top-bar {
+    margin: 1em 0; }
+
+body:not(.home) h1.page-title {
+  font-family: 'Futura Round W01 Demi', 'Futura', sans-serif; }
+
+.trips {
+  background-color: #333;
+  padding: 1em; }
+  .trips h4,
+  .trips p,
+  .trips .accordion h4,
+  .trips .accordion p {
+    color: #eee; }
+  .trips .accordion,
+  .trips .accordion .content.active {
+    background-color: #333;
+    color: #eee; }
 
 body:not(.home) .header {
   background: url("../images/lowerkernpano.jpg") no-repeat center center;

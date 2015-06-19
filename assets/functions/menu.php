@@ -43,6 +43,24 @@ function joints_off_canvas() {
 	    ));
 	}
 
+// Show the front grid items as a menu
+function joints_grid_menu() {
+	 wp_nav_menu(array(
+        'container' => false,                           // Remove nav container
+        'container_class' => '',                        // Class of container
+        'menu' => 'Front pages grid', 'jointstheme',                                   // Menu name
+        'menu_class' => 'top-bar-menu left',            // Adding custom nav class
+        'theme_location' => 'front-grid',                // Where it's located in the theme
+        'before' => '',                                 // Before each link <a>
+        'after' => '',                                  // After each link </a>
+        'link_before' => '',                            // Before each link text
+        'link_after' => '',                             // After each link text
+        'depth' => 5,                                   // Limit the depth of the nav
+        'fallback_cb' => false,                         // Fallback function (see below)
+        'walker' => new Top_Bar_Walker(),
+    ));
+} /* End front grid menu */
+
 // The Footer Menu
 function joints_footer_links() {
     wp_nav_menu(array(

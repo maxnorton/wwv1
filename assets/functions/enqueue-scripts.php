@@ -13,6 +13,9 @@ function joints_scripts_and_styles() {
     // Modernizr from bower_components
     wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/bower_components/foundation/js/vendor/modernizr.js', array(), '2.8.3', true );
     
+   // Add Skrollr from CDN
+   wp_enqueue_script( 'skrollr', '//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.29/skrollr.min.js');
+
     // Adding Foundation scripts file in the footer
    wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/assets/js/min/foundation.js', array( 'jquery' ), '', true );
     

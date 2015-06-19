@@ -5,6 +5,10 @@
 		<header class="article-header">
 			<h1 class="page-title"><?php the_title(); ?></h1>
 		</header> <!-- end article header -->
+
+		<div class="row collapse">
+			<?php if ( is_front_page() ) { get_template_part('parts/nav', 'main-gridbar' ); } ?>
+		</div>
 						
 	    <section class="entry-content" itemprop="articleBody">
 		    <?php the_content(); ?>

@@ -7,6 +7,10 @@ jQuery(document).foundation({
 
 jQuery(document).ready(function() {
 
+   var s = skrollr.init();
+
+   jQuery('body').append('<div id="skrollr-body"></div>');
+
 	jQuery('.scroll-to-anchor').each( function() {
 		jQuery(this).click( function() {
 			var target = jQuery(this).attr('href');
@@ -16,19 +20,21 @@ jQuery(document).ready(function() {
 		});
 	});
 
-	var lastScroll = jQuery(window).scrollTop();
-	jQuery(window).scroll(function() {
-		var scrollTop = jQuery(window).scrollTop();
-		var contentTop = Math.round( jQuery('#content').offset().top - 30 );
-		if ( scrollTop > lastScroll &&  scrollTop < contentTop - 100) {
-			jQuery('html, body').animate({
-		        scrollTop: contentTop
-			    }, 250, function () {
-						jQuery('html, body').stop();
-			    }
-		    );
-		}
-		lastScroll = scrollTop;
-	});
+	if ( jQuery('body').hasClass('home') ) {
+		var lastScroll = jQuery(window).scrollTop();
+		jQuery(window).scroll(function() {
+			var scrollTop = jQuery(window).scrollTop();
+			var contentTop = Math.round( jQuery('#content').offset().top - 30 );
+			if ( scrollTop > lastScroll &&  scrollTop < contentTop - 100) {
+				jQuery('html, body').animate({
+			        scrollTop: contentTop
+				    }, 250, function () {
+							jQuery('html, body').stop();
+				    }
+			    );
+			}
+			lastScroll = scrollTop;
+		});
+	}
 
 });
